@@ -28,6 +28,8 @@ telegram交流群：https://t.me/joinchat/Fjn0HkeqdoovkJgTRnvoNw
 
 GitHub Wiki : https://github.com/NimaQu/ss-panel-v3-mod_UIChanges/wiki/%E5%89%8D%E7%AB%AF%E5%AE%89%E8%A3%85
 
+码支付接入教程：https://github.com/NimaQu/ss-panel-v3-mod_UIChanges/wiki/%E7%A0%81%E6%94%AF%E4%BB%98%E5%AF%B9%E6%8E%A5%E6%95%99%E7%A8%8B
+
 易付通接入教程 ：https://github.com/NimaQu/ss-panel-v3-mod_UIChanges/wiki/%E6%98%93%E4%BB%98%E9%80%9A%E6%94%AF%E4%BB%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B
 
 黛米付接入教程：https://github.com/NimaQu/ss-panel-v3-mod_UIChanges/wiki/%E9%BB%9B%E7%B1%B3%E4%BB%98%E6%8E%A5%E5%85%A5%E6%95%99%E7%A8%8B
