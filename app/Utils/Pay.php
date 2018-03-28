@@ -14,8 +14,18 @@ class Pay
     {
         $driver = Config::get("payment_system");
         switch ($driver) {
+            case "doiampay":
+                return Pay::doiampay_html($user);
+            case "paymentwall":
+                return Pay::pmw_html($user);
+            case 'spay':
+                return Pay::spay_html($user);
+            case 'zfbjk':
+                return Pay::zfbjk_html($user);
             case "pay91":
                 return Pay::pay91($user);
+            case 'yftpay':
+                return Pay::yftpay_html($user);
             case 'f2fpay':
                 return Pay::f2fpay_html($user);
             case 'jsjapp':
@@ -70,7 +80,7 @@ class Pay
         return '
                         <p class="card-heading">请输入充值金额</p>
                         <form name="codepay" action="/user/code/codepay" method="get">
-                            <input class="form-control" id="price" name="price" >
+                            <input class="form-control" id="price" name="price" placeholder="输入充值金额后，点击你要付款的应用图标即可">
                             <br>
                             <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1" ><img src="/images/alipay.jpg" width="50px" height="50px" /></button>
                             <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="2" ><img src="/images/qqpay.jpg" width="50px" height="50px" /></button>
@@ -80,6 +90,27 @@ class Pay
 ';
     }
 
+  	private static function yftpay_html($user)
+
+    {
+        return '
+										<form action="/user/code/yft" method="post" target="_blank">
+										<div class="card-inner">
+											<p class="card-heading">在线充值</p>
+											<div class="form-group form-group-label">
+												<label class="floating-label" for="price">充值金额</label>
+												<input class="form-control" id="price" name="price" type="text">
+											</div>
+										</div>
+										<div class="card-action">
+											<div class="card-action-btn pull-left">
+												<button type="submit" class="btn btn-flat waves-attach" id="yftCoin" ><span class="icon">check</span>&nbsp;充值</button>
+											</div>
+										</div>
+									</form>
+';
+    }
+  
     private static function pay91($user)
     {
         //使用说明：
