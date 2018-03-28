@@ -72,9 +72,9 @@ class Pay
                         <form name="codepay" action="/user/code/codepay" method="get">
                             <input class="form-control" id="price" name="price" >
                             <br>
-                            <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1"><img src="/images/alipay.jpg"/></button>
-                            <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="2"><img src="/images/qqpay.jpg"/></button>
-                            <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="3" disabled><img src="/images/weixin.jpg"/></button>
+                            <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1" ><img src="/images/alipay.jpg" width="50px" height="50px" /></button>
+                            <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="2" ><img src="/images/qqpay.jpg" width="50px" height="50px" /></button>
+                            <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="3" disabled><img src="/images/weixin.jpg" width="50px" height="50px" /></button>
 
                         </form>          
 ';
