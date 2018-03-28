@@ -300,6 +300,7 @@ $System_Config['sendgrid_sender'] = '';
 $System_Config['payment_system']='none';
 
 #codepay码支付，https://codepay.myqdu.cn/
+#对接教程：https://github.com/NimaQu/ss-panel-v3-mod_UIChanges/wiki/码支付对接教程/
 $System_Config['codepay_id']='';//码支付ID
 $System_Config['codepay_key']='';//通信密钥
 
